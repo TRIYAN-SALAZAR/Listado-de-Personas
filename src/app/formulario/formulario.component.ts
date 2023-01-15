@@ -21,7 +21,14 @@ export class FormularioComponent {
   constructor(
     private LogginService:LogginService,
     private personaService: PersnaService
-  ){}
+  ){
+    this.personaService.saludar.subscribe(
+      (indice: number) => {
+        ++indice
+        alert("Hola desde el indice " + indice);
+      }
+    );
+  }
 
   AgregarPersona(): void{
     let AggPersona = new Persona(

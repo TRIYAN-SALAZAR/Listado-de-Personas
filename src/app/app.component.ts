@@ -19,8 +19,8 @@ export class AppComponent implements OnInit{
     ENTIENDE POR DIOOOOOS!!!!!
   */
 
-  constructor(private logginService: LogginService,private personaService: PersnaService){
-
+  constructor(private logginService: LogginService, private personaService: PersnaService){
+    
   }
 
   ngOnInit(): void {
@@ -28,6 +28,7 @@ export class AppComponent implements OnInit{
   }
 
   personaAgregada(persona: Persona){
+    //actualmente este metodo no tiene funcion , pero no lo borro por nomas
     this.personaService.agregarPersona(persona);
   }
 }
