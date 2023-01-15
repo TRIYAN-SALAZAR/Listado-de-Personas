@@ -1,16 +1,6 @@
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div>
-                {{ indice + 1 + ". " }}{{ persona._nombre }} {{ persona._apellido }}
-                <button
-                    type="submit"
-                    class="btn btn-info"
-                    (click)="emitirSaludo()"
-                >Editar</button>
-            </div>
-        </div>
-    </div>
-    <hr>
+<div class="item">
+    <input type="button" (click)="emitirSaludo()">
+    <p>
+        {{ indice + 1 + ". " }}{{ persona._nombre }} {{ persona._apellido }}
+    </p>
 </div>

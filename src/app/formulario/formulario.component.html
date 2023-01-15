@@ -1,33 +1,21 @@
-<form class="form-col">
-  <div class="form-group col-md-3">
-    <label for="Nombre" hidden>Nombre</label>
-    <input
-        type="text"
-        name="Nombre"
-        id="Nombre"
-        placeholder="Nombre"
-        class="form-control"
-        #nombreRef
-    />
-  </div>
-  <div class="form-group col-md-3">
-    <label for="apellido" hidden>apellido</label>
-    <input
-        type="text"
-        name="apellido"
-        id="apellido"
-        placeholder="Apellido"
-        class="form-control"
-        #apellidoRef
-    />
-  </div>
-  <div class="col">
-    <button 
-        type="submit" 
-        class="btn btn-primary"     
-        (click)="AgregarPersona()"
-      >
-      Agregar Persona
-    </button>
-  </div>
+<form class="item">  
+  <input
+      type="text"
+      name="Nombre"
+      id="Nombre"
+      placeholder="Nombre"
+      class=""
+      #nombreRef
+  />
+
+  <input
+      type="text"
+      name="apellido"
+      id="apellido"
+      placeholder="Apellido"
+      class=""
+      #apellidoRef
+  />
+
+  <button type="submit" class="" (click)="AgregarPersona()">+</button>
 </form>

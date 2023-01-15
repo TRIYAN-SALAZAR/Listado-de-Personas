@@ -1,10 +1,12 @@
-<div class="container">
-    <div class="col">
-        <h3>{{ titulo }}</h3>
-    </div>
-    <hr>
+<div class="box" id="heading">
+    <h1>{{ titulo }}</h1>
+</div>
+
+<div class="box">
     <app-formulario></app-formulario>
-    <hr>
+</div>
+
+<div class="box">
     <app-persona  
         *ngFor="let person of personas; let i = index"
         [persona]="person"
