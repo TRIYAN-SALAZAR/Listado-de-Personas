@@ -10,13 +10,15 @@ import { PERSONASComponent } from './personas/personas.component';
 
 import { LogginService } from './LogginService.service';
 import { PersnaService } from './personas.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonaComponent,
     FormularioComponent,
-    PERSONASComponent
+    PERSONASComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
