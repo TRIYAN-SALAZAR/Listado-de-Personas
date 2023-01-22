@@ -1,0 +1,29 @@
+<div class="box">
+  <form class="item" #f="ngForm" (ngSubmit)="f.form.valid && onGuardarPersona()">  
+    <input
+        type="text"
+        name="Nombre"
+        id="Nombre"
+        placeholder="Nombre"
+        class=""
+        [ngModel]="nombre"
+        #nombreR
+        required
+    />
+  
+    <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        placeholder="Apellido"
+        class=""
+        [ngModel]="apellido"
+        #apellidoR
+        required
+    />
+  
+    <button type="submit" style="cursor: pointer;">+</button>
+  </form>
+</div>
+<p>{{nombre}}</p>
+

@@ -2,14 +2,5 @@
     <h1>{{ titulo }}</h1>
 </div>
 
-<div class="box">
-    <app-formulario></app-formulario>
-</div>
 
-<div class="box">
-    <app-persona  
-        *ngFor="let person of personas; let i = index"
-        [persona]="person"
-        [indice]="i"
-    ></app-persona>
-</div>
+<router-outlet></router-outlet>

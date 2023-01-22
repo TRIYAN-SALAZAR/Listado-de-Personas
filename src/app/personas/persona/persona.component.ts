@@ -1,12 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { Persona } from '../Persona.model';
-import { PersnaService } from '../personas.service';
+import { Persona } from '../../Persona.model';
+import { PersnaService } from '../../personas.service';
 
 @Component({
   selector: 'app-persona',
   templateUrl: './persona.component.html',
   styleUrls: ['./persona.component.css']
 })
+
 export class PersonaComponent {
   
   @Input() persona:Persona;
@@ -14,11 +15,5 @@ export class PersonaComponent {
 
   constructor(
     private PersnaService: PersnaService
-  ){
-
-  }
-
-  emitirSaludo():void {
-    this.PersnaService.saludar.emit(this.indice);
-  }
+  ){}
 }

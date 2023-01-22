@@ -23,4 +23,15 @@ export class PersnaService {
     this.personas.push(persona);
     this.logginService.envioMensajeAConsola('Agregamos a la persona: ' + persona._nombre + ' ' + persona._apellido);
   }
+
+  encontrarPersona(index:number):Persona {
+    let persona:Persona = this.personas[index];
+    return persona;
+  }
+
+  modificarPersona(index:number, modificarPersona:Persona){
+    let persona = this.personas[index];
+    persona._nombre = modificarPersona._nombre;
+    persona._apellido = modificarPersona._apellido;
+  }
 }
