@@ -1,1 +1,3 @@
-console('hola mundo AAAAAAA')
+print('hola mundo AAAAAAA')
+
+#se a arreglado el error
