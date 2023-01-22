@@ -10,7 +10,6 @@ import { PERSONASComponent } from './personas/personas.component';
 
 import { LogginService } from './LogginService.service';
 import { PersnaService } from './personas.service';
-import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,6 @@ import { LoginComponent } from './login/login.component';
     PersonaComponent,
     FormularioComponent,
     PERSONASComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
